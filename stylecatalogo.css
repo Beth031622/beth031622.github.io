@@ -1,0 +1,49 @@
+
+.cajajoyeria{
+    display: flex;
+    width: 100%;
+    margin:5px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(253, 234, 241);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.card{
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background: var(--i);
+    background-size:cover;
+    box-shadow: 5px 3px 5px 3px rgb(180, 181, 182);
+    overflow:hidden;
+}
+.content{
+margin: 20px;
+width: 200px;
+height: 80px;
+margin: 50px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color:rgb(71, 126, 9);
+opacity: 0;
+transition: .7s;
+}
+.content a{
+    display: flex;
+    text-decoration-line: none;
+    justify-content: center;
+    color:plum;
+
+}
+.content a:hover{
+    color: rgba(0, 0, 0, 0.911);
+}
+.card:hover .content{
+    opacity: 1;
+}
