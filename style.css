@@ -2,9 +2,9 @@ header {
     display: flex;
     margin: auto;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-evenly;
     width: 100%;
-    background-image: linear-gradient(to right bottom, #809b29, #bc9c43, #e4a06f, #f7ab9f, #f9bfca, #fac3d7, #f9c8e4, #f6cef1, #f9c1f4, #fcb4f8, #fea7fb, #ff99ff)
+    background-image: linear-gradient(to right top, #c4fcef, #c5fafd, #cff6ff, #def2ff, #eaeeff, #f2ecfd, #f9eafa, #ffe9f4, #ffe9ec, #ffedde, #fff4d2, #fefecf);
 }
 
 header a {
@@ -23,7 +23,7 @@ header ul li {
     margin: 5px;
     justify-content: flex-end;
     align-items: last baseline;
-    font-size: 15px;
+    font-size: 17px;
 
 }
 
@@ -39,21 +39,24 @@ header ul li :hover {
 }
 
 header img {
-    width: 80%;
+    border-radius: 100px;
+    width: 70%;
 }
 
 header h1 {
-    font-size: 500%;
+    font-size:300%;
     justify-content: center;
+    padding: 50px 20px 50px 20px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-h1 {
+h1{
     display: flex;
-    font-size: 400%;
     justify-content: center;
-    color: black;
+    color: #55b8a3;
+    font-style: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
@@ -84,55 +87,12 @@ p {
     width: 150px;
     height: 500px;
 }
-
-
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 10%;
-    background-image: linear-gradient(to right bottom, #809b29, #bc9c43, #e4a06f, #f7ab9f, #f9bfca, #fac3d7, #f9c8e4, #f6cef1, #f9c1f4, #fcb4f8, #fea7fb, #ff99ff);
-}
-
-
-
-.otros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.miboton {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 200px;
-    background-color: #f1dbe6;
-    color: #000000;
-    border: 2px solid rgb(223, 81, 204);
-    padding: 5x;
-    font-size: 20px;
-    cursor: pointer;
-
-}
-
-.apartado {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: first baseline;
-    margin: 10px 50px 10px 50px;
-    font-size: 50%;
-
-}
 button{
     display: flex;
     background-color:#f9bfca;
     border: 1px solid rgb(226, 176, 203);
     align-items: center;
-    width: 150px;
+    width: 90%;
     height: 20px;
     padding: 10px;
     font-size:small;
@@ -155,8 +115,45 @@ button{
 }
 
 .link a:hover{
-    background-color:wheat;
+    background-color:#919d3b;
 }
 .despegable:hover .link{
     display: block;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(to right top, #c4fcef, #c5fafd, #cff6ff, #def2ff, #eaeeff, #f2ecfd, #f9eafa, #ffe9f4, #ffe9ec, #ffedde, #fff4d2, #fefecf);
+}
+
+
+.miboton {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #f1dbe6;
+    color: #000000;
+    border: 2px solid rgb(223, 81, 204);
+    padding: 5x;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.apartado {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: first baseline;
+    margin: 5px 8px 5px 8px;
+    font-size: 60%;
+
+}
+.otros{
+    display: flex;
+    flex-direction: column;
+}
+

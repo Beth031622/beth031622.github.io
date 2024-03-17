@@ -1,36 +1,31 @@
-
 .cajajoyeria{
     display: flex;
+flex-wrap: wrap-reverse;
     width: 100%;
     margin:5px;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: rgb(253, 234, 241);
+    min-height: 70vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 .card{
     margin: 5px;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
     background: var(--i);
     background-size:cover;
     box-shadow: 5px 3px 5px 3px rgb(180, 181, 182);
     overflow:hidden;
 }
 .content{
-margin: 20px;
-width: 200px;
-height: 80px;
-margin: 50px 0;
+width: 80%;
+height: 15%;
+margin: 20px 0;
 display: flex;
-flex-direction: column;
-align-items: center;
 justify-content: center;
-background-color:rgb(71, 126, 9);
 opacity: 0;
 transition: .7s;
 }
@@ -38,12 +33,27 @@ transition: .7s;
     display: flex;
     text-decoration-line: none;
     justify-content: center;
-    color:plum;
+    color: rgba(169, 253, 85, 0.705);
 
 }
 .content a:hover{
-    color: rgba(0, 0, 0, 0.911);
+    color:rgb(236, 69, 133)
 }
 .card:hover .content{
-    opacity: 1;
+    opacity: 4;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color:darkolivegreen;
+    font-family:cursive;
+    font-size: 50px;
+    background-image: linear-gradient(to right, #cf9ea9, #d09fa0, #cfa097, #caa390, #c4a68c, #c0a582, #baa579, #b2a571, #a9a25f, #9e9f4d, #919d3b, #809b29);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px,1fr));
+    grid-auto-rows: minmax(200px,auto);
+    gap: 20px;
+    padding: 10px;
 }
